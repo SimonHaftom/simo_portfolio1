@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>su.me.ga</title>
+  <link rel="stylesheet" href="index.css">
+<link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet" />  <link rel="stylesheet" href="index.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong>SIMON HAFTOM</strong></div>
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT ME</a>
+    <a href="#contact">CONTACT ME</a>
+    <div class="dropdown">
+      <a href="#">MORE ▼</a>
+      <div class="dropdown-content">
+        <a href="#featured">Featured Plans</a>
+        <a href="#skills">My Skills</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="container" id="about">
+  <div class="about-section">
+    <div class="about-text">
+      <h1>About me</h1>
+      <h3>Who am I? I am SIMON HAFTOM</h3>
+      <p>
+        I am Simon, a passionate and dedicated full stack web developer with extensive experience in designing, developing, and maintaining modern web applications. Over the years, I have honed my skills in both front-end and back-end technologies, enabling me to create seamless and efficient web solutions that meet the needs of diverse clients and industries. From crafting visually appealing user interfaces using HTML, CSS, and JavaScript frameworks, to building robust server-side applications with Node.js, Python, or PHP, I thrive on solving complex challenges and delivering high-quality code. I am committed to continuous learning and keeping up with the latest trends and best practices in web development, ensuring that every project I work on is scalable, secure, and user-friendly. My goal is to build meaningful digital experiences that not only look great but also perform flawlessly across all devices and platforms.
+
+
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="code.png" alt="Welcome to My Design Portfolio">
+    </div>
+  </div>
+
+  <div class="featured-section" id="featured" style="border-radius: ;">
+    <h2>Featured Plans</h2>
+    <div class="carousel">
+      <div class="carousel-images" id="carouselImages">
+        <img src="download.jfif" >
+        <img src="download (1).jfif" >
+        <img src="img 5.png" alt="Feature 3">
+      </div>
+      <button class="left" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="skills-section" id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-logos">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+    </div>
+  </div>
+
+  <div class="contact-form" id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return showPopup(event)">
+      <input type="email" id="email" placeholder="Email address" required>
+      <input type="text" id="phone" placeholder="Phone number">
+      <input type="text" id="name" placeholder="Your name" required>
+      <textarea id="message" placeholder="Enter your message" required></textarea>
+      <div class="social-icons">
+<div class="social-icons" style="display: flex; gap: 20px; justify-content: center; align-items: center;">
+  <a href="https://www.instagram.com/su.me.ga
+" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class='bx bxl-instagram' style="font-size: 30px; color: #000;"></i>
+  </a>
+  <a href="https://t.me/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+    <i class='bx bxl-telegram' style="font-size: 30px; color: #000;"></i>
+  </a>
+  <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+    <i class='bx bxl-twitter' style="font-size: 30px; color: #000;"></i>
+  </a>
+  <a href="https://www.youtube.com/channel/yourchannel" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+    <i class='bx bxl-youtube' style="font-size: 30px; color: #000;"></i>
+  </a>
+</div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div class="popup" id="popup">
+  <h3>Thank you!</h3>
+  <p>Your message has been received.</p>
+  <button onclick="closePopup()">Close</button>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
